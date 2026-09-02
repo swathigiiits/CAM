@@ -1,0 +1,81 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+ENV/
+env/
+active_env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Generated Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Large Datasets & Archives
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.rar
+
+# Video & Raw Sensor Capture Files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.vrs
+
+# Model Weights & Checkpoints
+*.pt
+*.pth
+*.weights
+*.bin
+*.onnx
+*.engine
+weights/
+best/
+
+# Output & Run Directories
+yolo_output/
+runs/
+val_myeye2wheeler/
+with_data/
+all_in_one/
