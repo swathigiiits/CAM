@@ -63,19 +63,13 @@ $RECYCLE.BIN/
 *.mkv
 *.vrs
 
-# Model Weights & Checkpoints
-*.pt
-*.pth
-*.weights
-*.bin
-*.onnx
-*.engine
-weights/
-best/
-
 # Output & Run Directories
 yolo_output/
 runs/
 val_myeye2wheeler/
 with_data/
 all_in_one/
+best/
+best
+/best
+/best/
