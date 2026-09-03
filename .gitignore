@@ -63,6 +63,13 @@ $RECYCLE.BIN/
 *.mkv
 *.vrs
 
+# Logs and Text Files
+*.log
+**/*.log
+*.txt
+**/*.txt
+run_log*.txt
+
 # CSV Data Files (Ignore all CSVs except Location.csv and general_eye_gaze.csv)
 *.csv
 **/*.csv
