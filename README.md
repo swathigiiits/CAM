@@ -1,12 +1,12 @@
 # CAM: Driver Cognitive Attention & Eye-Gaze Analytics
 
-A comprehensive research platform and toolchain for **driver attention analysis, visual gaze mapping, and multi-sensor data extraction** designed specifically for heterogeneous and unstructured traffic environments (motorized two-wheelers, urban traffic).
+A research platform and toolchain for **driver visual attention analysis, gaze-object intersection mapping, pupil dynamics, and multi-sensor data extraction** designed specifically for heterogeneous and unstructured traffic environments.
 
 ---
 
 ## 📌 Repository Overview
 
-This repository contains the core AI pipelines, data extraction routines, and gaze-to-object attention mapping scripts used in two-wheeler rider visual behavior research:
+This repository contains AI pipelines, data extraction routines, and gaze-to-object attention mapping scripts for rider and driver visual behavior research:
 
 ```
 CAM/
@@ -18,7 +18,7 @@ CAM/
 │   ├── results.csv              # Aggregated attention & fixation metrics
 │   ├── run_log.txt              # Pipeline execution logs
 │   ├── run_log_100epochs.txt    # Extended training & evaluation benchmark logs
-│   └── sreevatsav-tada-p21.json # Aria session sensor calibration parameters
+│   └── sreevatsav-tada-p21.json # Calibration parameters
 │
 ├── Data extraction/             # Meta Project Aria .vrs data extraction utilities
 │   ├── SHOW_EYE.py              # Real-time gaze & eye camera visualizer
@@ -27,7 +27,6 @@ CAM/
 │   ├── extract_all_et_images.py # Frame extraction pipeline from raw .vrs files
 │   └── quick_rotate_fix.py      # Camera frame rotation and alignment helper
 │
-├── README_myEye2Wheeler.md      # Reference specs for the myEye2Wheeler dataset
 └── .gitignore                   # Repository filtering rules
 ```
 
@@ -37,13 +36,13 @@ CAM/
 
 ### 1. Attention Analysis (`Attention Analysis/`)
 * **Gaze-Object Mapping (`dreye_final.py`, `dreye_yolo.py`)**:
-  * Associates frame-level gaze points $(x, y)$ with dynamic bounding boxes detected by YOLO (e.g., `autorickshaw`, `two_wheeler`, `pedestrian`, `large_vehicle`, `road`).
-  * Classifies visual focus into **on-road**, **lead vehicle**, **mirror glance**, or **off-road distraction**.
+  * Associates frame-level gaze coordinates $(x, y)$ with dynamic bounding boxes detected by YOLO (e.g., `autorickshaw`, `two_wheeler`, `pedestrian`, `large_vehicle`, `road`).
+  * Classifies visual focus into **on-road**, **lead vehicle**, **mirror glance**, or **off-road attention**.
 * **Attention Metrics**:
   * Fixation duration (I-VT velocity threshold identification).
-  * Gaze transition entropy and scanning quality across traffic hazards.
+  * Gaze transition entropy and scanning behavior across traffic hazards.
 
-### 2. Data Extraction & VRS Utilities (`Data extraction/`)
+### 2. Data Extraction & Sensor Utilities (`Data extraction/`)
 * **VRS Stream Parsing (`analyze_vrs_profiles.py`)**: Analyzes Meta Project Aria multi-sensor `.vrs` records (RGB scene camera, dual eye-tracking cameras, IMU, GPS).
 * **Batch Frame Extraction (`extract_all_et_images.py`)**: Synchronizes and extracts high-resolution scene video frames and corresponding eye crops.
 * **Pupil Tracking (`batch_pupil_detect.py`)**: Computes pupil dilation dynamics for cognitive workload estimation.
@@ -69,25 +68,13 @@ pip install opencv-python numpy pandas matplotlib ultralytics scipy
 
 ---
 
-## 📊 Related Datasets & Research
+## 📊 Related Datasets & Research Assets
 
 * **`Data50`**: Annotated YOLO segmentation and detection dataset for 5 urban traffic classes: `autorickshaw`, `large_vehicle`, `pedestrian`, `road`, and `two_wheeler`.
-* **`et_data`**: Volunteer driver recordings from Meta Project Aria glasses containing raw `.vrs` files, sensor sidecars, and MPS (Machine Perception Services) gaze outputs.
-* **`myEye2Wheeler`**: Benchmark two-wheeler eye-tracking dataset in urban Indian traffic (*IEEE ITSC 2024*).
+* **`et_data`**: Driver recordings from wearable eye-tracking glasses (Meta Project Aria) containing raw `.vrs` streams, sensor telemetry, and gaze outputs.
 
 ---
 
-## 📖 Citation
+## 📬 Contact & Citation
 
-If you use these scripts or associated datasets in your research, please cite:
-```bibtex
-@inproceedings{kumar2024myeye2wheeler,
-  title={myEye2Wheeler: A Two-Wheeler Indian Driver Real-World Eye-Tracking Dataset},
-  author={Kumar, Bhaiya Vaibhaw and Rawat, D. and Kandalla, T. and Nagariya, A. and Vemuri, K.},
-  booktitle={2024 IEEE 27th International Conference on Intelligent Transportation Systems (ITSC)},
-  pages={3773--3778},
-  year={2024},
-  organization={IEEE},
-  doi={10.1109/ITSC58415.2024.10920038}
-}
-```
+For research collaboration or inquiries regarding this toolchain and dataset, please open an issue or reach out via GitHub ([@swathigiiits](https://github.com/swathigiiits)).
