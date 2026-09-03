@@ -12,8 +12,7 @@ CAM/
 │   ├── dreye_final.py           # SegFormer + DR(EYE)VE attentiveness & 2x2 grid visualization
 │   ├── dreye_yolo.py            # YOLO11s-seg + DR(EYE)VE attention mapping pipeline
 │   ├── Location.csv             # GPS telemetry trajectory stream
-│   ├── general_eye_gaze.csv     # Extracted 2D/3D gaze tracking coordinate records
-│   └── sreevatsav-tada-p21.json # Aria sensor calibration parameters
+│   └── general_eye_gaze.csv     # Extracted 2D/3D gaze tracking coordinate records
 │
 ├── Data extraction/             # Meta Project Aria .vrs data extraction utilities
 │   ├── SHOW_EYE.py              # Real-time gaze & eye camera region visualizer

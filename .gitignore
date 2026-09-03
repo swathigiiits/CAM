@@ -70,6 +70,10 @@ $RECYCLE.BIN/
 **/*.txt
 run_log*.txt
 
+# Calibration and JSON Files
+*.json
+**/*.json
+
 # CSV Data Files (Ignore all CSVs except Location.csv and general_eye_gaze.csv)
 *.csv
 **/*.csv
