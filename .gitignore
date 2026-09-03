@@ -63,6 +63,12 @@ $RECYCLE.BIN/
 *.mkv
 *.vrs
 
+# CSV Data Files (Ignore all CSVs except Location.csv and general_eye_gaze.csv)
+*.csv
+**/*.csv
+!Attention Analysis/Location.csv
+!Attention Analysis/general_eye_gaze.csv
+
 # Output & Run Directories
 yolo_output/
 runs/
