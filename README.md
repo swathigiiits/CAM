@@ -20,7 +20,7 @@ CAM/
 │   ├── analyze_vrs_profiles.py  # Profile parser and sensor integrity analyzer
 │   ├── batch_pupil_detect.py    # Automated batch pupil diameter detector
 │   ├── extract_all_et_images.py # Synchronized frame extraction from raw .vrs files
-│   └── quick_rotate_fix.py      # Camera frame rotation and alignment helper
+│   └── quick_rotate_fix.py      # Camera frame rotation and alignment helper to extract scene data
 │
 ├── weights/                     # Pre-trained model weights
 │   └── best.pt                  # Custom trained YOLO11s-seg weights (Data50 Indian traffic)
