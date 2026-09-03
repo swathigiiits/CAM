@@ -53,7 +53,7 @@ CAM/
 ### 2. Sensor Extraction & VRS Utilities (`Data extraction/`)
 * **Meta Project Aria Stream Parser (`analyze_vrs_profiles.py`)**: Parses multi-stream `.vrs` records (RGB scene camera, dual infrared eye tracking sensors, IMU, GPS).
 * **Batch Frame Extraction (`extract_all_et_images.py`)**: Synchronizes and extracts high-resolution scene video frames and corresponding eye camera crops.
-* **Pupil Tracking (`batch_pupil_detect.py`, `SHOW_EYE.py`)**: Measures frame-level pupil diameter dynamics for cognitive workload estimation.
+* **Pupil Tracking (`batch_pupil_detect.py`, `SHOW_EYE.py`)**: Measures frame-level pupil detection for data quality.
 
 ---
 
