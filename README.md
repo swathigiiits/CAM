@@ -68,7 +68,7 @@ CAM/
 
 ```bash
 # Clone repository
-git clone git@github.com:swathigiiits/CAM.git
+git clone https://github.com/swaaathi1/CAM.git
 cd CAM
 
 # Install dependencies
