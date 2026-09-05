@@ -90,3 +90,14 @@ best/
 best
 /best
 /best/
+
+# Smart Helmet Agent
+!smart-helmet-agent/
+!smart-helmet-agent/**
+smart-helmet-agent/backend/venv/
+smart-helmet-agent/backend/__pycache__/
+smart-helmet-agent/backend/.env
+smart-helmet-agent/frontend/node_modules/
+smart-helmet-agent/frontend/dist/
+smart-helmet-agent/frontend/.env
+

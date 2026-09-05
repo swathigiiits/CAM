@@ -21,6 +21,11 @@ CAM/
 │   ├── extract_all_et_images.py # Synchronized frame extraction from raw .vrs files
 │   └── quick_rotate_fix.py      # Camera frame rotation and alignment helper to extract scene data
 │
+├── smart-helmet-agent/          # Full-stack Smart Helmet driver attention analytics agent platform
+│   ├── backend/                 # FastAPI backend (analytics, gaze homography, coaching engine)
+│   ├── frontend/                # React + Vite + Tailwind interactive UI dashboard
+│   └── README.md                # Full feature set & API reference
+│
 ├── weights/                     # Pre-trained model weights
 │   └── best.pt                  # Custom trained YOLO11s-seg weights (Data50 Indian traffic)
 │
@@ -54,6 +59,14 @@ CAM/
 * **Meta Project Aria Stream Parser (`analyze_vrs_profiles.py`)**: Parses multi-stream `.vrs` records (RGB scene camera, dual infrared eye tracking sensors, IMU, GPS).
 * **Batch Frame Extraction (`extract_all_et_images.py`)**: Synchronizes and extracts high-resolution scene video frames and corresponding eye camera crops.
 * **Pupil Tracking (`batch_pupil_detect.py`, `SHOW_EYE.py`)**: Measures frame-level pupil detection for data quality.
+
+### 3. Smart Helmet Analytics Agent (`smart-helmet-agent/`)
+* **Full-Stack Safety Assistant**: Combines real-time gaze homography calibration, OpenCV scene understanding, and longitudinal driver risk tracking.
+* **Cognitive Scoring & Coaching**:
+  * Calculates composite attention scores (0–100), road vs off-road glance durations, and hazard scanning coverage.
+  * Generates rule-based & LLM-powered personalized driver coaching reports.
+* **Interactive Dashboard**: Responsive React/Vite UI for uploading driver sessions, streaming scene video overlays, and reviewing driver progress trends.
+
 
 ---
 
