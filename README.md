@@ -1,5 +1,8 @@
 # CAM: Driver Cognitive Attention & Eye-Gaze Analytics
 
+[![DOI](https://img.shields.io/badge/DOI-10.21227%2Fanav--6k66-blue.svg)](https://dx.doi.org/10.21227/anav-6k66)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 A multimodal research platform and toolchain for **driver visual attention modeling, gaze-to-object semantic segmentation, pupil dynamics, and sensor telemetry extraction** designed specifically for dense, heterogeneous, and unstructured traffic environments.
 
 ---
@@ -81,7 +84,7 @@ CAM/
 
 ```bash
 # Clone repository
-git clone https://github.com/swaaathi1/CAM.git
+git clone https://github.com/swathigiiits/CAM.git
 cd CAM
 
 # Install dependencies
@@ -105,11 +108,23 @@ python "Data extraction/SHOW_EYE.py" --image "/path/to/eye_frame.jpg"
 
 ## 📊 Associated Datasets & Assets
 
-* **`Data50`**: Custom annotated YOLO segmentation and detection dataset for 5 Indian urban traffic classes.
+* **`Data50`**: Custom annotated YOLO segmentation and detection dataset for 5 Indian urban traffic classes ([Kaggle Dataset](https://www.kaggle.com/datasets/swathiiiig/data50)).
 * **`et_data`**: Driver recording sessions captured using Meta Project Aria glasses (raw `.vrs` files, sensor telemetry sidecars, and MPS gaze records).
+* **Dataset DOI**: [![DOI](https://img.shields.io/badge/DOI-10.21227%2Fanav--6k66-blue.svg)](https://dx.doi.org/10.21227/anav-6k66) (`10.21227/anav-6k66` via IEEE Dataport)
 
 ---
 
 ## 📬 Contact & Citation
 
 For questions, issues, or collaborations regarding this toolchain and dataset, please open an issue on GitHub ([@swathigiiits](https://github.com/swathigiiits)).
+
+```bibtex
+@misc{swathi2026cam,
+  title={CAM: Cognitive Attention Mapping and Driver Eye-Gaze Analytics Dataset},
+  author={Swathi and collaborators},
+  year={2026},
+  doi={10.21227/anav-6k66},
+  publisher={IEEE Dataport},
+  url={https://dx.doi.org/10.21227/anav-6k66}
+}
+```
